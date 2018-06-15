@@ -1,0 +1,88 @@
+{
+	"tags": ["fun", "moderation", "tools", "utility"],
+	"stores":
+		[{
+			"name": "arguments",
+			"description": "Arguments turn the users' input into parameters passed to commands."
+		},
+		{
+			"name": "commands",
+			"description": "Commands take input from a user, and return some output in the form of a message."
+		},
+		{
+			"name": "events",
+			"description": "Event pieces run when their respective Discord event is emitted, with the relevant parameters."
+		},
+		{
+			"name": "extendables",
+			"description": "Extendables add methods and properties to pieces to allow you to re-use methods and common code."
+		},
+		{
+			"name": "finalizers",
+			"description": "Finalizers are small functions which run after a command has executed."
+		},
+		{
+			"name": "inhibitors",
+			"description": "Inhibitors run before a command, and decide whether or not the user is allowed to run that command."
+		},
+		{
+			"name": "languages",
+			"description": "Languages let you seamlessly translate your bot into different languages"
+		},
+		{
+			"name": "monitors",
+			"description": "Monitors run every time any message is posted in any channel the bot can see."
+		},
+		{
+			"name": "providers",
+			"description": "Providers are how you interact with your database, and store data."
+		},
+		{
+			"name": "tasks",
+			"description": "Tasks are pre-defined functions which can run on a specific timed schedule."
+		}],
+	"pieces": [
+		{
+			"name": "channelname",
+			"description": "An argument for getting channels by name.",
+			"creator": "kyranet",
+			"store": "arguments",
+			"tags": []
+		},
+		{
+			"name": "rolename",
+			"description": "An argument for getting roles by name.",
+			"creator": "kyranet",
+			"store": "arguments",
+			"tags": []
+		},
+		{
+			"name": "username",
+			"description": "An argument for getting users by name.",
+			"creator": "kyranet",
+			"store": "arguments",
+			"tags": []
+		},
+		{
+			"name": "wordcloud",
+			"description": "Generate a wordcloud from the chat.",
+			"creator": "Magnaboy",
+			"store": "commands",
+			"tags": ["fun"]
+		},
+		{
+			"name": "ban",
+			"description": "Ban someone!s",
+			"creator": "someone",
+			"store": "commands",
+			"tags": ["moderation"]
+		},
+		{
+			"name": "swearfilter",
+			"description": "Removes swear words!",
+			"creator": "someone Else",
+			"store": "monitors",
+			"tags": []
+		}
+	]
+}
