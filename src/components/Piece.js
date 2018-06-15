@@ -5,7 +5,7 @@ class Piece extends Component {
 	render() {
 		const { piece } = this.props;
 		return (
-			<div className="card" style={{ width: '18rem' }}>
+			<div className="card m-3" style={{ width: '18rem' }}>
 			  <div className="card-body">
 			    <h5 className="card-title">{piece.name}</h5>
 			    <h6 className="card-subtitle mb-2 text-muted">{piece.creator}</h6>

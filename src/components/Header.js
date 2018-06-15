@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+
+import { stores } from "../assets/metadata.json";
 
 class Header extends Component {
+	generateLinks() {
+		return stores.map(store => (
+			<li className="nav-item" key={store.name}>
+				<Link className={`nav-link ${this.props.store === store.name && "active"}`} to={`/${store.name}`}>{store.name}</Link>
+			</li>
+		))
+	}
 	render() {
 		return (
 			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -10,30 +20,7 @@ class Header extends Component {
 			  </button>
 			  <div className="collapse navbar-collapse" id="navbarNav">
 			    <ul className="navbar-nav">
-			      <li className="nav-item">
-			        <a className="nav-link" href="#">Commands</a>
-			      </li>
-			      <li className="nav-item">
-			        <a className="nav-link" href="#">Monitors</a>
-			      </li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">Inhibitors</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">Inhibitors</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">Inhibitors</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">Inhibitors</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">Inhibitors</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">Inhibitors</a>
-						</li>
+			      {this.generateLinks()}
 			    </ul>
 			  </div>
 			</nav>
