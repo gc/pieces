@@ -47,6 +47,7 @@
 			"description": "An argument for getting channels by name.",
 			"creator": "kyranet",
 			"store": "arguments",
+			"path": "",
 			"tags": []
 		},
 		{
@@ -54,6 +55,7 @@
 			"description": "An argument for getting roles by name.",
 			"creator": "kyranet",
 			"store": "arguments",
+			"path": "",
 			"tags": []
 		},
 		{
@@ -61,6 +63,7 @@
 			"description": "An argument for getting users by name.",
 			"creator": "kyranet",
 			"store": "arguments",
+			"path": "",
 			"tags": []
 		},
 		{
@@ -68,6 +71,7 @@
 			"description": "Generate a wordcloud from the chat.",
 			"creator": "Magnaboy",
 			"store": "commands",
+			"path": "Fun/",
 			"tags": ["fun"]
 		},
 		{
@@ -75,6 +79,7 @@
 			"description": "Ban someone!s",
 			"creator": "someone",
 			"store": "commands",
+			"path": "",
 			"tags": ["moderation"]
 		},
 		{
@@ -82,6 +87,7 @@
 			"description": "Removes swear words!",
 			"creator": "someone Else",
 			"store": "monitors",
+			"path": "",
 			"tags": []
 		}
 	]
