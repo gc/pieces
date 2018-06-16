@@ -67,28 +67,236 @@
 			"tags": []
 		},
 		{
-			"name": "wordcloud",
-			"description": "Generate a wordcloud from the chat.",
-			"creator": "Magnaboy",
+			"name": "prefix",
+			"description": "Change the prefix for a guild.",
+			"creator": "gc",
 			"store": "commands",
-			"path": "Fun/",
+			"path": "/Configuration/",
+			"tags": [""]
+		},
+		{
+			"name": "8ball",
+			"description": "An interactive Magic 8ball you can ask questions to.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Fun/",
 			"tags": ["fun"]
 		},
 		{
-			"name": "ban",
-			"description": "Ban someone!s",
-			"creator": "someone",
+			"name": "banner",
+			"description": "Creates an ASCII banner from the string you supply.",
+			"creator": "kyranet",
 			"store": "commands",
-			"path": "",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "card",
+			"description": "Draws random cards from a card deck.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "catfacts",
+			"description": "Shows a random fact about cats.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "choice",
+			"description": "Makes a decision for you given some choices.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "coinflip",
+			"description": "Flips one or more coins.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "chucknorris",
+			"description": "Returns a random Chuck Norris joke.",
+			"creator": "AdityaTD",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "dogfact",
+			"description": "Gives you a random dog fact.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "compliment",
+			"description": "Compliments a user.",
+			"creator": "Kashalls",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "faceapp",
+			"description": "Applies a faceapp filter to an image.",
+			"creator": "gc",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "insult",
+			"description": "Insults whoever you mention.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "markov",
+			"description": "Generate a markov chain from the text chat.",
+			"creator": "gc",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "randquote",
+			"description": "Returns a random quote from someone in the channel.",
+			"creator": "gc",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "shame",
+			"description": "Rings a bell on the server shaming the mentioned person.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "trumpquote",
+			"description": "Returns a random Donald Trump quote.",
+			"creator": "gc",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "urban",
+			"description": "Searches the Urban Dictionary library for a definition to the search term.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "wordcloud",
+			"description": "Generate a wordcloud from the messages in a chat.",
+			"creator": "gc",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "yomomma",
+			"description": "Returns a random 'Yo Momma' joke.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Fun/",
+			"tags": ["fun"]
+		},
+		{
+			"name": "dog",
+			"description": "Grabs a random dog image.",
+			"creator": "linkzyzvg",
+			"store": "commands",
+			"path": "/Misc/",
+			"tags": [""]
+		},
+		{
+			"name": "echo",
+			"description": "Send a message to a channel through the bot.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Misc/",
+			"tags": [""]
+		},
+		{
+			"name": "fml",
+			"description": "Gets a random FML story.",
+			"creator": "Kashalls",
+			"store": "commands",
+			"path": "/Misc/",
+			"tags": [""]
+		},
+		{
+			"name": "starboard",
+			"description": "Stars a message.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Misc/",
+			"tags": [""]
+		},
+		{
+			"name": "cat",
+			"description": "Grabs a random cat image.",
+			"creator": "linkzyzvg",
+			"store": "commands",
+			"path": "/Misc/",
+			"tags": [""]
+		},
+		{
+			"name": "ban",
+			"description": "Bans a mentioned user.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Moderation/",
 			"tags": ["moderation"]
 		},
 		{
-			"name": "swearfilter",
-			"description": "Removes swear words!",
-			"creator": "someone Else",
-			"store": "monitors",
-			"path": "",
-			"tags": []
+			"name": "kick",
+			"description": "Kicks a mentioned user.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Moderation/",
+			"tags": ["moderation"]
+		},
+		{
+			"name": "softban",
+			"description": "Softbans a mentioned user.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Moderation/",
+			"tags": ["moderation"]
+		},
+		{
+			"name": "exec",
+			"description": "Execute commands in the terminal, use with EXTREME CAUTION.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/System/",
+			"tags": [""]
+		},
+		{
+			"name": "prune",
+			"description": "Prunes a certain amount of messages w/o filter.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "/Misc/",
+			"tags": [""]
 		}
 	]
 }

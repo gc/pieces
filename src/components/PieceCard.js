@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import { CodeIcon, DownloadIcon } from '../assets/';
 import { withRouter } from 'react-router-dom'
 
-class Piece extends Component {
+class PieceCard extends Component {
 	render() {
 		const { piece } = this.props;
 		return (
-			<div className="h-100 darkgrey-bg">
+			<div className="card m-3 darkgrey-bg" onClick={() => {
+					this.props.history.push(`/${piece.store}/${piece.name}`)
+				}}>
 				<div className="card-header d-flex justify-content-between">
 					<h6 className="white">{piece.name}</h6>
 					<div className="w-25 d-flex justify-content-around">
@@ -32,8 +34,8 @@ class Piece extends Component {
 	}
 }
 
-Piece.propTypes = {
+PieceCard.propTypes = {
   piece: PropTypes.object.isRequired
 };
 
-export default withRouter(Piece);
+export default withRouter(PieceCard);
