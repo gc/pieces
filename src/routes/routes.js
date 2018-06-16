@@ -5,7 +5,7 @@ import MetaData from "../assets/metadata";
 import App from '../App';
 
 export const routes = (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path={`/`} render={(props) => <App {...props} pieces={MetaData.pieces} />}/>
       {MetaData.stores.map(store => {
