@@ -10,7 +10,7 @@ export const routes = (
       <Route exact path={`/`} render={(props) => <App {...props} pieces={MetaData.pieces} />}/>
       {MetaData.stores.map(store => {
         return <Route exact path={`/${store.name}/:piece?`} render={
-            (props) => <App {...props} pieces={MetaData.pieces.filter(p => p.store === store.name)} store={store.name} />
+            (props) => <App {...props} pieces={MetaData.pieces.filter(p => p.store === store.name)} store={store} />
         } key={store.name} />
       })}
       <Route component={NotFound} />

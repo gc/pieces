@@ -1,33 +1,59 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { CodeIcon, DownloadIcon } from '../assets/';
 import { withRouter } from 'react-router-dom'
+import Highlight from 'react-highlight';
+
+import { CodeIcon, DownloadIcon } from '../assets/';
+import CreatorCard from "./CreatorCard";
+import 'highlight.js/styles/atom-one-dark.css';
+
 
 class Piece extends Component {
+	state = {
+		creator: null,
+		code: null
+	}
+
+	componentDidMount() {
+		const { piece } = this.props;
+		fetch(`https://api.github.com/users/${piece.creator}`)
+			.then(res => res.json())
+			.then(data => {
+				this.setState({ creator: data });
+			})
+		fetch(`https://raw.githubusercontent.com/dirigeants/klasa-pieces/master/${piece.store + piece.path + piece.name}.js`)
+			.then(response => response.text())
+			.then(text => {
+				this.setState({ code: text });
+			})
+	}
+
 	render() {
 		const { piece } = this.props;
 		return (
-			<div className="h-100 darkgrey-bg">
-				<div className="card-header d-flex justify-content-between">
-					<h6 className="white">{piece.name}</h6>
-					<div className="w-25 d-flex justify-content-around">
-						<a href="/" target="_blank">
-							<DownloadIcon classes="white" />
-						</a>
-						<a href={`https://github.com/dirigeants/klasa-pieces/tree/master/${piece.store + piece.path}/${piece.name}.js`} target="_blank">
-							<CodeIcon classes="white" />
-						</a>
+				<div className="jumbotron darkgrey-bg w-100 h-100">
+					<div className="d-flex justify-content-between">
+						<div>
+							<h1 className="display-4 white">{piece.name}</h1>
+							<p className="lead grey-text">{piece.description}</p>
+							<hr className="my-4"/>
+							<p className="lead">
+								<div className="w-25 d-flex justify-content-around">
+									<a href={`https://raw.githubusercontent.com/dirigeants/klasa-pieces/master/${piece.store + piece.path + piece.name}.js`} target="_blank" download>
+										<DownloadIcon classes="white" />
+									</a>
+									<a href={`https://github.com/dirigeants/klasa-pieces/tree/master/${piece.store + piece.path + piece.name}.js`} target="_blank">
+										<CodeIcon classes="white" />
+									</a>
+								</div>
+							</p>
+						</div>
+						{this.state.creator && <CreatorCard {...this.state.creator} />}
 					</div>
+					<Highlight className="JavaScript lightgrey-bg p-3">
+					  {this.state.code}
+					</Highlight>
 				</div>
-				<div className="card-body grey-text">
-			    <p className="card-text">{piece.description}</p>
-					<p className="card-text">
-						<small>
-							Created by <a className="" href={`https://github.com/${piece.creator}`}>{piece.creator}</a>
-						</small>
-					</p>
-			  </div>
-			</div>
 		);
 	}
 }

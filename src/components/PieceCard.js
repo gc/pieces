@@ -13,10 +13,10 @@ class PieceCard extends Component {
 				<div className="card-header d-flex justify-content-between">
 					<h6 className="white">{piece.name}</h6>
 					<div className="w-25 d-flex justify-content-around">
-						<a href={`https://raw.githubusercontent.com/dirigeants/klasa-pieces/master/${piece.store + piece.path}/${piece.name}.js`} target="_blank" download>
+						<a href={`https://raw.githubusercontent.com/dirigeants/klasa-pieces/master/${piece.store + piece.path + piece.name}.js`} target="_blank" download>
 							<DownloadIcon classes="white" />
 						</a>
-						<a href={`https://github.com/dirigeants/klasa-pieces/tree/master/${piece.store + piece.path}/${piece.name}.js`} target="_blank">
+						<a href={`https://github.com/dirigeants/klasa-pieces/tree/master/${piece.store + piece.path + piece.name}.js`} target="_blank">
 							<CodeIcon classes="white" />
 						</a>
 					</div>
