@@ -1,6 +1,7 @@
 import React from 'react';
-import NotFound from '../components/NotFound';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
+import NotFound from '../components/NotFound';
 import MetaData from "../assets/metadata";
 import App from '../App';
 
