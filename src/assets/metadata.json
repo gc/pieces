@@ -47,7 +47,7 @@
 			"description": "An argument for getting channels by name.",
 			"creator": "kyranet",
 			"store": "arguments",
-			"path": "/",
+			"path": "arguments/channelname.js",
 			"tags": []
 		},
 		{
@@ -55,7 +55,7 @@
 			"description": "An argument for getting roles by name.",
 			"creator": "kyranet",
 			"store": "arguments",
-			"path": "/",
+			"path": "arguments/rolename.js",
 			"tags": []
 		},
 		{
@@ -63,7 +63,7 @@
 			"description": "An argument for getting users by name.",
 			"creator": "kyranet",
 			"store": "arguments",
-			"path": "/",
+			"path": "arguments/username.js",
 			"tags": []
 		},
 		{
@@ -71,15 +71,15 @@
 			"description": "Change the prefix for a guild.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Configuration/",
-			"tags": [""]
+			"path": "commands/Configuration/prefix.js",
+			"tags": []
 		},
 		{
 			"name": "8ball",
 			"description": "An interactive Magic 8ball you can ask questions to.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/8ball.js",
 			"tags": ["fun"]
 		},
 		{
@@ -87,7 +87,7 @@
 			"description": "Creates an ASCII banner from the string you supply.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/banner.js",
 			"tags": ["fun"]
 		},
 		{
@@ -95,7 +95,7 @@
 			"description": "Draws random cards from a card deck.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/card.js",
 			"tags": ["fun"]
 		},
 		{
@@ -103,7 +103,7 @@
 			"description": "Shows a random fact about cats.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/catfacts.js",
 			"tags": ["fun"]
 		},
 		{
@@ -111,7 +111,7 @@
 			"description": "Makes a decision for you given some choices.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/choice.js",
 			"tags": ["fun"]
 		},
 		{
@@ -119,7 +119,7 @@
 			"description": "Flips one or more coins.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/coinflip.js",
 			"tags": ["fun"]
 		},
 		{
@@ -127,15 +127,15 @@
 			"description": "Returns a random Chuck Norris joke.",
 			"creator": "AdityaTD",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/chucknorris.js",
 			"tags": ["fun"]
 		},
 		{
-			"name": "dogfact",
+			"name": "dogfacts",
 			"description": "Gives you a random dog fact.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/dogfacts.js",
 			"tags": ["fun"]
 		},
 		{
@@ -143,7 +143,7 @@
 			"description": "Compliments a user.",
 			"creator": "Kashalls",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/compliment.js",
 			"tags": ["fun"]
 		},
 		{
@@ -151,7 +151,7 @@
 			"description": "Applies a faceapp filter to an image.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/faceapp.js",
 			"tags": ["fun"]
 		},
 		{
@@ -159,7 +159,7 @@
 			"description": "Insults whoever you mention.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/insult.js",
 			"tags": ["fun"]
 		},
 		{
@@ -167,7 +167,7 @@
 			"description": "Generate a markov chain from the text chat.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/markov.js",
 			"tags": ["fun"]
 		},
 		{
@@ -175,7 +175,7 @@
 			"description": "Returns a random quote from someone in the channel.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/randquote.js",
 			"tags": ["fun"]
 		},
 		{
@@ -183,7 +183,7 @@
 			"description": "Rings a bell on the server shaming the mentioned person.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/shame.js",
 			"tags": ["fun"]
 		},
 		{
@@ -191,7 +191,7 @@
 			"description": "Returns a random Donald Trump quote.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/trumpquote.js",
 			"tags": ["fun"]
 		},
 		{
@@ -199,7 +199,7 @@
 			"description": "Searches the Urban Dictionary library for a definition to the search term.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/urban.js",
 			"tags": ["fun"]
 		},
 		{
@@ -207,7 +207,7 @@
 			"description": "Generate a wordcloud from the messages in a chat.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/wordcloud.js",
 			"tags": ["fun"]
 		},
 		{
@@ -215,7 +215,7 @@
 			"description": "Returns a random 'Yo Momma' joke.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Fun",
+			"path": "commands/Fun/yomomma.js",
 			"tags": ["fun"]
 		},
 		{
@@ -223,47 +223,47 @@
 			"description": "Grabs a random dog image.",
 			"creator": "linkzyzvg",
 			"store": "commands",
-			"path": "/Misc",
-			"tags": [""]
+			"path": "commands/Misc/dog.js",
+			"tags": []
 		},
 		{
 			"name": "echo",
 			"description": "Send a message to a channel through the bot.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Misc",
-			"tags": [""]
+			"path": "commands/Misc/echo.js",
+			"tags": []
 		},
 		{
 			"name": "fml",
 			"description": "Gets a random FML story.",
 			"creator": "Kashalls",
 			"store": "commands",
-			"path": "/Misc",
-			"tags": [""]
+			"path": "commands/Misc/fml.js",
+			"tags": []
 		},
 		{
 			"name": "starboard",
 			"description": "Stars a message.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Misc",
-			"tags": [""]
+			"path": "commands/Misc/starboard.js",
+			"tags": []
 		},
 		{
 			"name": "cat",
 			"description": "Grabs a random cat image.",
 			"creator": "linkzyzvg",
 			"store": "commands",
-			"path": "/Misc",
-			"tags": [""]
+			"path": "commands/Misc/cat.js",
+			"tags": []
 		},
 		{
 			"name": "ban",
 			"description": "Bans a mentioned user.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Moderation",
+			"path": "commands/Moderation/ban.js",
 			"tags": ["moderation"]
 		},
 		{
@@ -271,7 +271,15 @@
 			"description": "Kicks a mentioned user.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Moderation",
+			"path": "commands/Moderation/kick.js",
+			"tags": ["moderation"]
+		},
+		{
+			"name": "check",
+			"description": "Checks the guild for any user accounts younger than the minimum account age.",
+			"creator": "kyranet",
+			"store": "commands",
+			"path": "commands/Moderation/check.js",
 			"tags": ["moderation"]
 		},
 		{
@@ -279,7 +287,7 @@
 			"description": "Softbans a mentioned user.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Moderation",
+			"path": "commands/Moderation/softban.js",
 			"tags": ["moderation"]
 		},
 		{
@@ -287,360 +295,352 @@
 			"description": "Execute commands in the terminal, use with EXTREME CAUTION.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/System",
-			"tags": [""]
+			"path": "commands/System/exec.js",
+			"tags": []
 		},
 		{
 			"name": "prune",
 			"description": "Prunes a certain amount of messages w/o filter.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/System",
-			"tags": [""]
+			"path": "commands/System/prune.js",
+			"tags": []
 		},
 		{
 			"name": "eval",
 			"description": "Evalulate arbitrary JavaScript from a message.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/System/Admin",
-			"tags": [""]
+			"path": "commands/System/Admin/eval.js",
+			"tags": []
 		},
 		{
 			"name": "heapsnapshot",
 			"description": "Creates a heapdump for finding memory leaks.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/System/Admin",
-			"tags": [""]
+			"path": "commands/System/Admin/heapsnapshot.js",
+			"tags": []
 		},
 		{
 			"name": "followage",
 			"description": "Shows the followage of a given user from a given twitch channel.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/followage.js",
+			"tags": []
 		},
 		{
 			"name": "hastebin",
 			"description": "Upload code or text to hastebin.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "/commands/Tools/hastebin.js",
+			"tags": []
 		},
 		{
 			"name": "movie",
 			"description": "Returns information about a movie.",
 			"creator": "Dwigoric",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/movie.js",
+			"tags": []
 		},
 		{
 			"name": "price",
 			"description": "Compares the value of a currency (crypto, fiat) with another.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/price.js",
+			"tags": []
 		},
 		{
 			"name": "randomreddit",
 			"description": "Returns a random reddit post on a given subreddit.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/randomreddit.js",
+			"tags": []
 		},
 		{
 			"name": "remindme",
 			"description": "Creates a reminder.",
 			"creator": "kyranet",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/remindme.js",
+			"tags": []
 		},
 		{
 			"name": "role-info",
 			"description": "Get information on a role with an id or a mention",
 			"creator": "Kashalls",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/role-info.js",
+			"tags": []
 		},
 		{
 			"name": "server-info",
 			"description": "Get information on the current server.",
 			"creator": "Kashalls",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/server-info.js",
+			"tags": []
 		},
 		{
 			"name": "subreddit",
 			"description": "Returns information on a subreddit.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/subreddit.js",
+			"tags": []
 		},
 		{
 			"name": "topinvites",
 			"description": "Shows the top invites in a server.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/topinvites.js",
+			"tags": []
 		},
 		{
 			"name": "tvshow",
 			"description": "Returns information about a TV show.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/tvshow.js",
+			"tags": []
 		},
 		{
 			"name": "twitch",
 			"description": "Returns information on a Twitch.tv Account.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
-		},
-		{
-			"name": "",
-			"description": "",
-			"creator": "gc",
-			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/twitch.js",
+			"tags": []
 		},
 		{
 			"name": "user-info",
 			"description": "Get information on a mentioned user.",
 			"creator": "Kashalls",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/user-info.js",
+			"tags": []
 		},
 		{
 			"name": "wikipedia",
 			"description": "Finds a Wikipedia Article by title.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/wikipedia.js",
+			"tags": []
 		},
 		{
 			"name": "wolfram",
 			"description": "Query Wolfram Alpha with any mathematical question.",
 			"creator": "gc",
 			"store": "commands",
-			"path": "/Tools",
-			"tags": [""]
+			"path": "commands/Tools/wolfram.js",
+			"tags": []
 		},
 		{
 			"name": "ask",
 			"description": "Ask a user a question for a yes/no answer.",
 			"creator": "kyranet",
 			"store": "extendables",
-			"path": "/",
-			"tags": [""]
+			"path": "extendables/ask.js",
+			"tags": []
 		},
 		{
 			"name": "awaitReply",
 			"description": "Wait for a reply from the author.",
 			"creator": "kyranet",
 			"store": "extendables",
-			"path": "/",
-			"tags": [""]
+			"path": "extendables/awaitReply.js",
+			"tags": []
 		},
 		{
 			"name": "deleteCommand",
 			"description": "Delete the message after the command is used.",
 			"creator": "kyranet",
 			"store": "inhibitors",
-			"path": "/",
-			"tags": [""]
+			"path": "inhibitors/deleteCommand.js",
+			"tags": []
 		},
 		{
 			"name": "requiredProviders",
 			"description": "Require certain provider(s) for commands to be used.",
 			"creator": "kyranet",
 			"store": "inhibitors",
-			"path": "/",
-			"tags": [""]
+			"path": "inhibitors/requiredProviders.js",
+			"tags": []
 		},
 		{
 			"name": "de-DE",
 			"description": "German",
 			"creator": "Pandraghon",
 			"store": "languages",
-			"path": "/",
-			"tags": [""]
+			"path": "languages/de-DE.js",
+			"tags": []
 		},
 		{
 			"name": "ro-RO",
 			"description": "Romanian",
 			"creator": "Pandraghon",
 			"store": "languages",
-			"path": "/",
-			"tags": [""]
+			"path": "languages/ro-RO.js",
+			"tags": []
 		},
 		{
 			"name": "es-ES",
 			"description": "Spanish",
 			"creator": "Pandraghon",
 			"store": "languages",
-			"path": "/",
-			"tags": [""]
+			"path": "languages/es-ES.js",
+			"tags": []
 		},
 		{
 			"name": "fr-FR",
 			"description": "French",
 			"creator": "Pandraghon",
 			"store": "languages",
-			"path": "/",
-			"tags": [""]
+			"path": "languages/fr-FR.js",
+			"tags": []
 		},
 		{
 			"name": "it-IT",
 			"description": "Italian",
 			"creator": "Pandraghon",
 			"store": "languages",
-			"path": "/",
-			"tags": [""]
+			"path": "languages/it-IT.js",
+			"tags": []
 		},
 		{
 			"name": "tr-TR",
 			"description": "Turkish",
 			"creator": "Pandraghon",
 			"store": "languages",
-			"path": "/",
-			"tags": [""]
+			"path": "languages/tr-TR.js",
+			"tags": []
 		},
 		{
 			"name": "everyone",
 			"description": "Give people who try to mention @everyone a role.",
 			"creator": "YorkAARGH",
 			"store": "monitors",
-			"path": "/",
-			"tags": [""]
+			"path": "monitors/everyone.js",
+			"tags": []
 		},
 		{
 			"name": "invitedetection",
 			"description": "Detects invite links in the chat, and deletes them.",
 			"creator": "kyranet",
 			"store": "monitors",
-			"path": "/",
-			"tags": [""]
+			"path": "monitors/invitedetection.js",
+			"tags": []
 		},
 		{
 			"name": "nomention",
 			"description": "Logs a message whenever your bot is mentioned.",
 			"creator": "Dwigoric",
 			"store": "monitors",
-			"path": "/",
-			"tags": [""]
+			"path": "monitors/nomention.js",
+			"tags": []
 		},
 		{
 			"name": "reminder",
 			"description": "Simply sends a reminder message. To be used with remindme command.",
 			"creator": "bdistin",
 			"store": "tasks",
-			"path": "/",
-			"tags": [""]
+			"path": "tasks/reminder.js",
+			"tags": []
 		},
 		{
 			"name": "firestore",
 			"description": "A provider for firestore.",
 			"creator": "kyranet",
 			"store": "providers",
-			"path": "/",
-			"tags": [""]
+			"path": "providers/firestore.js",
+			"tags": []
 		},
 		{
 			"name": "level",
 			"description": "A provider for level database.",
 			"creator": "kyranet",
 			"store": "providers",
-			"path": "/",
-			"tags": [""]
+			"path": "providers/level.js",
+			"tags": []
 		},
 		{
 			"name": "mongodb",
 			"description": "A provider for mongodb.",
 			"creator": "bdistin",
 			"store": "providers",
-			"path": "/",
-			"tags": [""]
+			"path": "providers/mongodb.js",
+			"tags": []
 		},
 		{
 			"name": "mssql",
 			"description": "A provider for mssql.",
 			"creator": "kyranet",
 			"store": "providers",
-			"path": "/",
-			"tags": [""]
+			"path": "providers/mssql.js",
+			"tags": []
 		},
 		{
 			"name": "mysql",
 			"description": "A provider for mysql.",
 			"creator": "kyranet",
 			"store": "providers",
-			"path": "/",
-			"tags": [""]
+			"path": "providers/mysql.js",
+			"tags": []
 		},
 		{
 			"name": "nedb",
 			"description": "A provider for nedb.",
 			"creator": "kyranet",
 			"store": "providers",
-			"path": "/",
-			"tags": [""]
+			"path": "providers/nedb.js",
+			"tags": []
 		},
 		{
 			"name": "neo4j",
 			"description": "A provider for neo4j.",
 			"creator": "kyranet",
 			"store": "providers",
-			"path": "/",
-			"tags": [""]
+			"path": "providers/neo4j.js",
+			"tags": []
 		},
 		{
 			"name": "postgresql",
 			"description": "A provider for postgresql.",
 			"creator": "kyranet",
 			"store": "providers",
-			"path": "/",
-			"tags": [""]
+			"path": "providers/postgresql.js",
+			"tags": []
 		},
 		{
 			"name": "rebirthdb",
 			"description": "A provider for rebirthdb.",
 			"creator": "kyranet",
 			"store": "providers",
-			"path": "/",
-			"tags": [""]
+			"path": "providers/rebirthdb.js",
+			"tags": []
 		},
 		{
 			"name": "rethinkdb",
 			"description": "A provider for rethinkdb.",
 			"creator": "kyranet",
 			"store": "providers",
-			"path": "/",
-			"tags": [""]
+			"path": "providers/rethinkdb.js",
+			"tags": []
 		},
 		{
 			"name": "sqlite",
 			"description": "A provider for sqlite.",
 			"creator": "kyranet",
 			"store": "providers",
-			"path": "/",
-			"tags": [""]
+			"path": "providers/sqlite.js",
+			"tags": []
 		}
 	]
 }

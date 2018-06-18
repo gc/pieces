@@ -21,7 +21,7 @@ class Piece extends Component {
 			.then(data => {
 				this.setState({ creator: data });
 			})
-		fetch(`https://raw.githubusercontent.com/dirigeants/klasa-pieces/master/${piece.store + piece.path + piece.name}.js`)
+		fetch(`https://raw.githubusercontent.com/dirigeants/klasa-pieces/master/${piece.path}`)
 			.then(response => response.text())
 			.then(text => {
 				this.setState({ code: text });
@@ -39,10 +39,10 @@ class Piece extends Component {
 							<hr className="my-4"/>
 							<p className="lead">
 								<div className="w-25 d-flex justify-content-around">
-									<a href={`https://raw.githubusercontent.com/dirigeants/klasa-pieces/master/${piece.store + piece.path + piece.name}.js`} target="_blank" download>
+									<a href={`https://raw.githubusercontent.com/dirigeants/klasa-pieces/master/${piece.path}`} target="_blank" download>
 										<DownloadIcon classes="white" />
 									</a>
-									<a href={`https://github.com/dirigeants/klasa-pieces/tree/master/${piece.store + piece.path + piece.name}.js`} target="_blank">
+									<a href={`https://github.com/dirigeants/klasa-pieces/tree/master/${piece.path}`} target="_blank">
 										<CodeIcon classes="white" />
 									</a>
 								</div>
