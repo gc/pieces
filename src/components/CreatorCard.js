@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class CreatorCard extends Component {
 	render() {
 		return (
-				<div className="d-flex justify-content-around creator-card">
+				<div className="d-none d-sm-flex justify-content-around creator-card">
 					<div>
 						<small className="grey-text">Created by</small>
 						<h3 className="white">{this.props.creator.name}</h3>
