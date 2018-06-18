@@ -28,7 +28,7 @@ body {
 }
 
 .white {
-  color: #FFF;
+  color: #FFF!important;
   fill: #FFF;
 }
 
@@ -44,4 +44,13 @@ body {
 
 .card img {
   color: #99AAB5;
+}
+
+.jumbotron {
+  margin-bottom: 0px!important;
+}
+
+.creator-card {
+  height: 5rem;
+  width: 15rem;
 }

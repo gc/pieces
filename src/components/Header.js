@@ -14,9 +14,11 @@ class Header extends Component {
 			</li>
 		))
 	}
+
 	handleChange = (event) => {
 		this.props.filterPieces(event.target.value);
 	}
+
 	render() {
 		return (
 			<nav className="navbar navbar-expand-lg navbar-dark darkgrey-bg">
