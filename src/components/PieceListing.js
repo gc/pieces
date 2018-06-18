@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import PieceCard from './PieceCard';
-import Piece from "./Piece";
 import shuffleArray from "../util/shuffleArray";
 
 class PieceListing extends Component {
 	filterArray(pieces) {
-		const { filter, store } = this.props;
+		const { filter } = this.props;
 		if (filter) {
 			return pieces.filter(p => p.name.toLowerCase().includes(filter) ||
 			p.description.toLowerCase().includes(filter) || p.creator.toLowerCase().includes(filter))

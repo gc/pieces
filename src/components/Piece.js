@@ -36,8 +36,7 @@ class Piece extends Component {
 						<div>
 							<h1 className="display-4 white">{piece.name}</h1>
 							<p className="lead grey-text">{piece.description}</p>
-							<hr className="my-4"/>
-							<p className="lead">
+							<hr className="my-5"/>
 								<div className="w-25 d-flex justify-content-around">
 									<a href={`https://raw.githubusercontent.com/dirigeants/klasa-pieces/master/${piece.path}`} target="_blank" download>
 										<DownloadIcon classes="white" />
@@ -46,9 +45,9 @@ class Piece extends Component {
 										<CodeIcon classes="white" />
 									</a>
 								</div>
-							</p>
+								<hr className="my-2"/>
 						</div>
-						{this.state.creator && <CreatorCard {...this.state.creator} />}
+						{this.state.creator && <CreatorCard creator={this.state.creator} />}
 					</div>
 					<Highlight className="JavaScript lightgrey-bg p-3">
 					  {this.state.code}
@@ -59,7 +58,8 @@ class Piece extends Component {
 }
 
 Piece.propTypes = {
-  piece: PropTypes.object.isRequired
+  piece: PropTypes.object.isRequired,
+	goToPiece: PropTypes.func.isRequired
 };
 
 export default withRouter(Piece);

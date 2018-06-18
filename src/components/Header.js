@@ -38,7 +38,7 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-  store: PropTypes.string,
+  store: PropTypes.object,
 	filterPieces: PropTypes.func.isRequired
 };
 

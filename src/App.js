@@ -20,13 +20,13 @@ class App extends Component {
   }
 
   render() {
-    const { pieces } = this.props;
+    const { pieces, store } = this.props;
     const { piece } = this.props.match.params;
     return (
       <Fragment>
-        <Header store={this.props.store} filterPieces={this.filterPieces} />
-        {piece && <Piece piece={this.props.pieces.filter(p => p.name === piece)[0]} goToPiece={this.goToPiece.bind(this)} />
-      || <PieceListing pieces={this.props.pieces} filter={this.state.query} store={this.props.store} goToPiece={this.goToPiece.bind(this)} />}
+        <Header store={store} filterPieces={this.filterPieces} />
+        {piece && <Piece piece={pieces.filter(p => p.name === piece)[0]} goToPiece={this.goToPiece.bind(this)} />}
+        {!piece && <PieceListing pieces={pieces} filter={this.state.query} store={store} goToPiece={this.goToPiece.bind(this)} />}
       </Fragment>
     );
   }
@@ -34,7 +34,7 @@ class App extends Component {
 
 App.propTypes = {
   pieces: PropTypes.array.isRequired,
-  store: PropTypes.string,
+  store: PropTypes.object,
 };
 
 export default withRouter(App);
